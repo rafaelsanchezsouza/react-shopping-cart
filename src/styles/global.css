@@ -24,7 +24,7 @@ textarea {
   display: flex;
 }
 
-ul {
+.navBar {
   list-style-type: none;
   margin-top: 0;
   height: 50px;
@@ -32,7 +32,7 @@ ul {
   background: coral;
 }
 
-li {
+.storeName {
   float: left;
   display: block;
   padding: 14px 16px;

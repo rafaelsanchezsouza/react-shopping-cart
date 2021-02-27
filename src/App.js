@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react';
-import './styles/global.css';
 import api from './services/api';
+
+// Styles
+import './styles/global.css';
+
+// Components
+import Product from './components/storeProduct';
 
 function App() {
   const [storeProducts, setStoreProducts] = useState([]);
@@ -15,12 +20,19 @@ function App() {
   }, []);
 
   return (
-    <div id="store">
-      <ul>
-        <li>Akita's Shopping Cart</li>
+    <>
+      <ul className="navBar">
+        <li className="storeName">Akita's Shopping Cart</li>
         <li className="author">by Rafael Sanchez Souza</li>
       </ul>
-    </div>
+
+      <div id="store">
+        {storeProducts.map((product) => {
+          return <Product key={product.id} product={product} />;
+        })}
+        <h1>Hello</h1>
+      </div>
+    </>
   );
 }
 
