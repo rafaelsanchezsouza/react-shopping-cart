@@ -5,7 +5,7 @@ import api from './services/api';
 import './styles/global.css';
 
 // Components
-import Product from './components/storeProduct';
+import Product from './components/storeProduct/index';
 
 function App() {
   const [storeProducts, setStoreProducts] = useState([]);
@@ -30,7 +30,6 @@ function App() {
         {storeProducts.map((product) => {
           return <Product key={product.id} product={product} />;
         })}
-        <h1>Hello</h1>
       </div>
     </>
   );
