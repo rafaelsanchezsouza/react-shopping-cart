@@ -5,12 +5,12 @@ import api from './services/api';
 import './styles/global.css';
 
 // Components
-import Product from './components/storeProduct/index';
+import Product from './components/storeProduct';
+import ShoppingCart from './components/shoppingCart';
 
 function App() {
   const [storeProducts, setStoreProducts] = useState([]);
-
-  console.log(storeProducts);
+  const [cartProducts, setCartProducts] = useState([]);
 
   useEffect(() => {
     api.get('').then((response) => {
@@ -21,6 +21,22 @@ function App() {
     // };
   }, []);
 
+  function handleAddToCart(clickedProduct) {
+    setCartProducts((previous) => {
+      const isProductInCart = previous.find(
+        (product) => product.id === clickedProduct.id
+      );
+      if (isProductInCart) {
+        return previous.map((product) =>
+          product.id === clickedProduct.id
+            ? { ...product, amount: product.amount + 1 }
+            : product
+        );
+      }
+      return [...previous, { ...clickedProduct, amount: 1 }];
+    });
+  }
+
   return (
     <>
       <ul className="navBar">
@@ -30,8 +46,16 @@ function App() {
 
       <div id="store">
         {storeProducts.map((product) => {
-          return <Product key={product.id} product={product} />;
+          return (
+            <Product
+              key={product.id}
+              product={product}
+              handleAddToCart={handleAddToCart}
+            />
+          );
         })}
+
+        <ShoppingCart cartProducts={cartProducts} addToCart={handleAddToCart} />
       </div>
     </>
   );

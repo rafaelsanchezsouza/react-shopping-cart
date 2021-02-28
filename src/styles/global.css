@@ -24,6 +24,7 @@ textarea {
   background: linear-gradient(320deg, #96a89b 0%, #7df09d 100%);
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .navBar {

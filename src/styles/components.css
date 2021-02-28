@@ -1,0 +1,123 @@
+.itemWrapper {
+  margin: 20px;
+  /* padding: 20px; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 150px;
+  border: 1px solid whitesmoke;
+  border-radius: 15px;
+  height: 250px;
+}
+
+.buyButton {
+  border: none;
+  background-color: whitesmoke;
+  color: coral;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.buyButton:hover {
+  background-color: coral;
+  color: white;
+}
+
+button {
+  border-radius: 0 0 15px 15px;
+}
+
+.img {
+  height: 130px;
+  background-color: slategray;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.label {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  height: 100px;
+}
+
+.price {
+  font-size: 16px;
+  margin: 5px;
+}
+
+.name {
+  font-weight: bold;
+  margin: 5px;
+}
+
+.shoppingCart {
+  margin: 20px;
+  order: -1;
+  display: flex;
+  justify-items: flex-start;
+  flex-direction: column;
+  width: 340px;
+  height: 100%;
+  border: 1px solid whitesmoke;
+  border-radius: 15px;
+}
+
+.shoppingCartTitle {
+  border-radius: 15px 15px 0 0;
+  background-color: whitesmoke;
+  border: none;
+  color: coral;
+  padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.cartItemWrapper {
+  margin: 10px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px 5px 5px 5px;
+  height: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cartTotalWrapper {
+  border-top: 1px solid whitesmoke;
+  height: 50px;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.checkoutButton {
+  border: 1px solid whitesmoke;
+  color: coral;
+  padding: 10px 20px;
+  text-align: center;
+  justify-self: flex-end;
+  width: 100%;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.checkoutButton:hover {
+  background-color: coral;
+  color: white;
+}
