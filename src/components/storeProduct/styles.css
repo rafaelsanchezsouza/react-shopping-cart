@@ -45,4 +45,10 @@ img {
 
 .price {
   font-size: 16px;
+  margin: 5px;
+}
+
+.name {
+  font-weight: bold;
+  margin: 5px;
 }

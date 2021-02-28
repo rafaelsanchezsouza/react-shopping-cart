@@ -10,9 +10,11 @@ import Product from './components/storeProduct/index';
 function App() {
   const [storeProducts, setStoreProducts] = useState([]);
 
+  console.log(storeProducts);
+
   useEffect(() => {
     api.get('').then((response) => {
-      setStoreProducts(response.data);
+      setStoreProducts(response.data.products);
     });
     // return () => {
     //   cleanup;
