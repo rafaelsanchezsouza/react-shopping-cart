@@ -3,17 +3,31 @@ import CartProduct from './cartProduct';
 // Styles
 import '../styles/components.css';
 
-// const StoreProduct = ({ item, handleAddToCart }) => (
 export default function ShoppingCart({
   cartProducts,
   handleAddToCart,
   handleRemoveFromCart,
 }) {
-  const calculateTotal = (items) =>
-    items.reduce(
+  const calculateTotal = (products) =>
+    products.reduce(
       (accumulator, item) => accumulator + item.amount * item.price,
       0
     );
+
+  const calculateWeight = (products) =>
+    products.reduce((accumulator, item) => accumulator + item.amount, 0);
+
+  const calculateShipping = (products) => {
+    if (calculateTotal(products) > 400) return 0;
+    if (calculateWeight(products) <= 10) return 30;
+    if (calculateWeight(products) > 10)
+      return 30 + 7 * Math.floor((calculateWeight(products) - 10) / 5);
+    else return 0;
+  };
+
+  function calculateDiscout() {
+    return 0;
+  }
 
   return (
     <div className="shoppingCart">
@@ -28,13 +42,16 @@ export default function ShoppingCart({
         />
       ))}
       <h4 className="cartTotalWrapper">
-        Subtotal: R${calculateTotal([0, 0]).toFixed(2)}
+        Subtotal: R${calculateTotal(cartProducts).toFixed(2)}
       </h4>
       <h4 className="cartTotalWrapper">
-        Discount: R${calculateTotal([0, 0]).toFixed(2)}
+        Shipping: R${calculateShipping(cartProducts).toFixed(2)}
       </h4>
       <h3 className="cartTotalWrapper">
-        Total: R${calculateTotal([0, 0]).toFixed(2)}
+        Total: R$
+        {(
+          calculateTotal(cartProducts) + calculateShipping(cartProducts)
+        ).toFixed(2)}
       </h3>
       <button className="checkoutButton">CHECKOUT</button>
     </div>
