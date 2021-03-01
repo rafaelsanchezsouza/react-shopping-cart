@@ -37,6 +37,19 @@ function App() {
     });
   }
 
+  function handleRemoveFromCart(id) {
+    setCartProducts((previous) =>
+      previous.reduce((accumulator, product) => {
+        if (product.id === id) {
+          if (product.amount === 1) return accumulator;
+          return [...accumulator, { ...product, amount: product.amount - 1 }];
+        } else {
+          return [...accumulator, product];
+        }
+      })
+    );
+  }
+
   return (
     <>
       <ul className="navBar">
@@ -55,7 +68,11 @@ function App() {
           );
         })}
 
-        <ShoppingCart cartProducts={cartProducts} addToCart={handleAddToCart} />
+        <ShoppingCart
+          cartProducts={cartProducts}
+          addToCart={handleAddToCart}
+          removeFromCart={handleRemoveFromCart}
+        />
       </div>
     </>
   );

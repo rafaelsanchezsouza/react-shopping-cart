@@ -1,3 +1,5 @@
+import CartProduct from './cartProduct';
+
 // Styles
 import '../styles/components.css';
 
@@ -14,7 +16,7 @@ export default function ShoppingCart({ cartProducts }) {
       <p className="shoppingCartTitle">Shopping Cart</p>
       {cartProducts.length === 0 ? <p>No items in cart.</p> : null}
       {cartProducts.map((product) => (
-        <h1 className="cartItemWrapper">{product.name}</h1>
+        <CartProduct product={product} key={product.id} />
       ))}
       <h4 className="cartTotalWrapper">
         Subtotal: R${calculateTotal([0, 0]).toFixed(2)}

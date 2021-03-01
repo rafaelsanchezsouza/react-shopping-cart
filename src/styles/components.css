@@ -42,8 +42,11 @@ button {
 
 .label {
   font-family: Arial, Helvetica, sans-serif;
-  padding: 1rem;
-  height: 100px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  height: 50px;
 }
 
 .price {
@@ -88,7 +91,32 @@ button {
   height: 50px;
 
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cartImgWrapper {
+  border: none;
+  background-color: slategray;
+  border-radius: 5px 0px 0px 5px;
+  height: 100%;
+  width: 70px;
+}
+
+.cartQuantityWrapper {
+  border: 1px solid white;
+  height: 50px;
+  padding: 5px;
+  width: 150px;
+
+  display: flex;
   flex-direction: column;
+  justify-content: space-around;
+}
+
+.cartQuantity {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -101,6 +129,26 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.cartButtonsWrapper {
+  border: none;
+  background-color: slategray;
+  border-radius: 0px 5px 5px 0px;
+  height: 100%;
+  width: 70px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.cartAddButton {
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+.cartRemoveButton {
+  text-align: center;
 }
 
 .checkoutButton {
