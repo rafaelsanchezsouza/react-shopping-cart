@@ -4,7 +4,11 @@ import CartProduct from './cartProduct';
 import '../styles/components.css';
 
 // const StoreProduct = ({ item, handleAddToCart }) => (
-export default function ShoppingCart({ cartProducts }) {
+export default function ShoppingCart({
+  cartProducts,
+  handleAddToCart,
+  handleRemoveFromCart,
+}) {
   const calculateTotal = (items) =>
     items.reduce(
       (accumulator, item) => accumulator + item.amount * item.price,
@@ -16,7 +20,12 @@ export default function ShoppingCart({ cartProducts }) {
       <p className="shoppingCartTitle">Shopping Cart</p>
       {cartProducts.length === 0 ? <p>No items in cart.</p> : null}
       {cartProducts.map((product) => (
-        <CartProduct product={product} key={product.id} />
+        <CartProduct
+          product={product}
+          key={product.id}
+          handleAddToCart={handleAddToCart}
+          handleRemoveFromCart={handleRemoveFromCart}
+        />
       ))}
       <h4 className="cartTotalWrapper">
         Subtotal: R${calculateTotal([0, 0]).toFixed(2)}

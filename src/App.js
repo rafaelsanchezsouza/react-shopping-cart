@@ -70,8 +70,8 @@ function App() {
 
         <ShoppingCart
           cartProducts={cartProducts}
-          addToCart={handleAddToCart}
-          removeFromCart={handleRemoveFromCart}
+          handleAddToCart={handleAddToCart}
+          handleRemoveFromCart={handleRemoveFromCart}
         />
       </div>
     </>
