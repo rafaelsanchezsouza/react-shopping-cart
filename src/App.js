@@ -7,6 +7,9 @@ import './styles/global.css';
 // Components
 import Product from './components/storeProduct';
 import ShoppingCart from './components/shoppingCart';
+import cartProduct from './components/cartProduct';
+
+let i = 0;
 
 function App() {
   const [storeProducts, setStoreProducts] = useState([]);
@@ -49,21 +52,20 @@ function App() {
       }, [])
     );
   }
-
   return (
     <>
       <ul className="navBar">
         <li className="storeName">Akita's Shopping Cart</li>
         <li className="author">by Rafael Sanchez Souza</li>
       </ul>
-
       <div id="store">
-        {storeProducts.map((product) => {
+        {storeProducts.map((product, index) => {
           return (
             <Product
               key={product.id}
               product={product}
               handleAddToCart={handleAddToCart}
+              cartProduct={cartProducts[index]}
             />
           );
         })}

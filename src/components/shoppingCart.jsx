@@ -10,12 +10,12 @@ export default function ShoppingCart({
 }) {
   const calculateTotal = (products) =>
     products.reduce(
-      (accumulator, item) => accumulator + item.amount * item.price,
+      (accumulator, product) => accumulator + product.amount * product.price,
       0
     );
 
   const calculateWeight = (products) =>
-    products.reduce((accumulator, item) => accumulator + item.amount, 0);
+    products.reduce((accumulator, product) => accumulator + product.amount, 0);
 
   const calculateShipping = (products) => {
     if (calculateTotal(products) > 400) return 0;
@@ -25,7 +25,7 @@ export default function ShoppingCart({
     else return 0;
   };
 
-  function calculateDiscout() {
+  function calculateDiscount() {
     return 0;
   }
 
