@@ -46,7 +46,7 @@ function App() {
         } else {
           return [...accumulator, product];
         }
-      })
+      }, [])
     );
   }
 
