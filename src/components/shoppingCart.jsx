@@ -25,10 +25,6 @@ export default function ShoppingCart({
     else return 0;
   };
 
-  function calculateDiscount() {
-    return 0;
-  }
-
   return (
     <div className="shoppingCart">
       <p className="shoppingCartTitle">Shopping Cart</p>

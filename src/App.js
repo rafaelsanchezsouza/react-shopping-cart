@@ -12,7 +12,7 @@ function App() {
   const [storeProducts, setStoreProducts] = useState([]);
   const [cartProducts, setCartProducts] = useState([]);
 
-  useEffect(async () => {
+  useEffect(() => {
     api.get('').then((response) => {
       setStoreProducts(response.data.products);
     });
