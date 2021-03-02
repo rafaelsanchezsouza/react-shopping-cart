@@ -28,7 +28,8 @@ function App() {
       );
       if (isProductInCart) {
         return previous.map((product) =>
-          product.id === clickedProduct.id
+          product.id === clickedProduct.id &&
+          product.available - product.amount > 0
             ? { ...product, amount: product.amount + 1 }
             : product
         );
