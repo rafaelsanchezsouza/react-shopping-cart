@@ -60,15 +60,16 @@ button {
 }
 
 .shoppingCart {
+  position: fixed;
+  right: 20px;
   margin: 20px;
-  order: -1;
-  display: flex;
-  justify-items: flex-start;
-  flex-direction: column;
   width: 340px;
-  height: 100%;
   border: 1px solid whitesmoke;
   border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
 }
 
 .shoppingCartTitle {

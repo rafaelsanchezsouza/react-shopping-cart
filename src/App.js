@@ -5,22 +5,21 @@ import api from './services/api';
 import './styles/global.css';
 
 // Components
-import Product from './components/storeProduct';
+import StoreProduct from './components/storeProduct';
 import ShoppingCart from './components/shoppingCart';
-
-let i = 0;
 
 function App() {
   const [storeProducts, setStoreProducts] = useState([]);
   const [cartProducts, setCartProducts] = useState([]);
 
+  let json = require('./products.json');
+  console.log(json);
+
   useEffect(async () => {
     api.get('').then((response) => {
-      setStoreProducts(response.data.products);
+      // setStoreProducts(response.data.products);
+      setStoreProducts(json.products);
     });
-    // return () => {
-    //   cleanup;
-    // };
   }, []);
 
   function handleAddToCart(clickedProduct) {
@@ -58,16 +57,18 @@ function App() {
         <li className="author">by Rafael Sanchez Souza</li>
       </ul>
       <div id="store">
-        {storeProducts.map((product, index) => {
-          return (
-            <Product
-              key={product.id}
-              product={product}
-              handleAddToCart={handleAddToCart}
-              cartProduct={cartProducts[index]}
-            />
-          );
-        })}
+        <div id="productShelf">
+          {storeProducts.map((product, index) => {
+            return (
+              <StoreProduct
+                key={product.id}
+                product={product}
+                handleAddToCart={handleAddToCart}
+                cartProduct={cartProducts[index]}
+              />
+            );
+          })}
+        </div>
 
         <ShoppingCart
           cartProducts={cartProducts}
