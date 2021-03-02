@@ -61,9 +61,9 @@ button {
 
 .shoppingCart {
   position: fixed;
-  right: 20px;
+  right: 40px;
   margin: 20px;
-  width: 340px;
+  width: 360px;
   border: 1px solid whitesmoke;
   border-radius: 15px;
 
@@ -112,7 +112,7 @@ button {
   border: none;
   height: 50px;
   padding: 5px;
-  width: 150px;
+  width: 190px;
 
   display: flex;
   flex-direction: column;

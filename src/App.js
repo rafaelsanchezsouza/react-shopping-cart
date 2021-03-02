@@ -12,13 +12,9 @@ function App() {
   const [storeProducts, setStoreProducts] = useState([]);
   const [cartProducts, setCartProducts] = useState([]);
 
-  let json = require('./products.json');
-  console.log(json);
-
   useEffect(async () => {
     api.get('').then((response) => {
-      // setStoreProducts(response.data.products);
-      setStoreProducts(json.products);
+      setStoreProducts(response.data.products);
     });
   }, []);
 

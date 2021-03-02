@@ -20,7 +20,7 @@ textarea {
   padding: 50px;
   margin-top: 30px;
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background: linear-gradient(320deg, #96a89b 0%, #7df09d 100%);
   display: grid;
   grid-template-columns: 75% 25%;
