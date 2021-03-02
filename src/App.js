@@ -8,13 +8,16 @@ import './styles/global.css';
 import StoreProduct from './components/storeProduct';
 import ShoppingCart from './components/shoppingCart';
 
+const getProducts = require('./products.json');
+
 function App() {
   const [storeProducts, setStoreProducts] = useState([]);
   const [cartProducts, setCartProducts] = useState([]);
 
   useEffect(() => {
     api.get('').then((response) => {
-      setStoreProducts(response.data.products);
+      // setStoreProducts(response.data.products);
+      setStoreProducts(getProducts.products);
     });
   }, []);
 
