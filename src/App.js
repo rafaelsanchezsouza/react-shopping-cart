@@ -8,7 +8,7 @@ import './styles/global.css';
 import StoreProduct from './components/storeProduct';
 import ShoppingCart from './components/shoppingCart';
 
-const getProducts = require('./products.json');
+// const getProducts = require('./products.json');
 
 function App() {
   const [storeProducts, setStoreProducts] = useState([]);
@@ -59,12 +59,15 @@ function App() {
       <div id="store">
         <div id="productShelf">
           {storeProducts.map((product, index) => {
+            // console.log('CartProduct: ');
+            // console.log(cartProducts[index]);
+            // console.log(cartProducts);
             return (
               <StoreProduct
                 key={product.id}
                 product={product}
                 handleAddToCart={handleAddToCart}
-                cartProduct={cartProducts[index]}
+                cartProducts={cartProducts}
               />
             );
           })}
