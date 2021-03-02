@@ -7,7 +7,6 @@ import './styles/global.css';
 // Components
 import Product from './components/storeProduct';
 import ShoppingCart from './components/shoppingCart';
-import cartProduct from './components/cartProduct';
 
 let i = 0;
 
@@ -15,7 +14,7 @@ function App() {
   const [storeProducts, setStoreProducts] = useState([]);
   const [cartProducts, setCartProducts] = useState([]);
 
-  useEffect(() => {
+  useEffect(async () => {
     api.get('').then((response) => {
       setStoreProducts(response.data.products);
     });

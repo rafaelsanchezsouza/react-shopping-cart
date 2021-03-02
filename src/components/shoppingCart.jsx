@@ -32,7 +32,9 @@ export default function ShoppingCart({
   return (
     <div className="shoppingCart">
       <p className="shoppingCartTitle">Shopping Cart</p>
-      {cartProducts.length === 0 ? <p>No items in cart.</p> : null}
+      {cartProducts.length === 0 ? (
+        <p className="emptyCart">No items in cart.</p>
+      ) : null}
       {cartProducts.map((product) => (
         <CartProduct
           product={product}
