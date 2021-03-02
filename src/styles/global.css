@@ -23,7 +23,7 @@ textarea {
   height: 100vh;
   background: linear-gradient(320deg, #96a89b 0%, #7df09d 100%);
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 75% 25%;
 }
 
 #productShelf {
