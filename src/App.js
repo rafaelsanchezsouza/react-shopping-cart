@@ -16,8 +16,8 @@ function App() {
 
   useEffect(() => {
     api.get('').then((response) => {
-      // setStoreProducts(response.data.products);
-      setStoreProducts(getProducts.products);
+      setStoreProducts(response.data.products);
+      // setStoreProducts(getProducts.products);
     });
   }, []);
 
