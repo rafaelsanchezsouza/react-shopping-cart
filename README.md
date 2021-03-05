@@ -8,7 +8,7 @@ It has basic functionalities required for a front-end store but there are still 
 
 ### [Live Demo](http://akita-shopping-cart.herokuapp.com)
 
-### Bult With
+### Built With
 
 - ReactJS
 
