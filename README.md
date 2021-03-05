@@ -33,7 +33,7 @@ git clone https://github.com/rafaelsanchezsouza/akita-shopping-cart.git
 2. Install required packages
 
 ```
-yarn add
+yarn install
 ```
 
 3. Start local application
