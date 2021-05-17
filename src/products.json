@@ -4,79 +4,92 @@
       "id": 1,
       "name": "Banana",
       "price": 10.0,
-      "available": 10
+      "available": 10,
+      "image": "https://i.ibb.co/gZ94mkz/banana.jpg"
     },
     {
       "id": 2,
       "name": "Apple",
       "price": 20.0,
-      "available": 15
+      "available": 15,
+      "image": "https://i.ibb.co/JnBJQHw/apple.jpg"
     },
     {
       "id": 3,
       "name": "Orange",
       "price": 30.0,
-      "available": 8
+      "available": 8,
+      "image": "https://i.ibb.co/1MSyZ2p/orange.jpg"
     },
     {
       "id": 4,
       "name": "Melon",
       "price": 10.0,
-      "available": 10
+      "available": 10,
+      "image": "https://i.ibb.co/fdjC01w/melon.jpg"
     },
     {
       "id": 5,
       "name": "Grape",
       "price": 20.0,
-      "available": 15
+      "available": 15,
+      "image": "https://i.ibb.co/J2XXH1K/grape.webp"
     },
     {
       "id": 6,
       "name": "Strawberry",
       "price": 30.0,
-      "available": 8
+      "available": 8,
+      "image": "https://i.ibb.co/qWYqHGQ/strawberry.jpg"
     },
     {
       "id": 7,
       "name": "Cherry",
       "price": 10.0,
-      "available": 10
+      "available": 10,
+      "image": "https://i.ibb.co/6g9k30f/cherry.jpg"
     },
     {
       "id": 8,
       "name": "Pineapple",
       "price": 20.0,
-      "available": 15
+      "available": 15,
+      "image": "https://i.ibb.co/KmgkPwd/pineapple.webp"
     },
     {
       "id": 9,
       "name": "Avocado",
       "price": 30.0,
-      "available": 8
+      "available": 8,
+      "image": "https://i.ibb.co/dKB7mL3/avocado.jpg"
     },
     {
       "id": 10,
       "name": "Mango",
       "price": 10.0,
-      "available": 10
+      "available": 10,
+      "image": "https://i.ibb.co/DbHnTDY/mango.jpg"
     },
     {
       "id": 11,
       "name": "Lime",
       "price": 20.0,
-      "available": 1
+      "available": 1,
+      "image": "https://i.ibb.co/LgLKm0T/lime.jpg"
     },
     {
       "id": 12,
       "name": "Papaya",
       "price": 30.0,
-      "available": 8
+      "available": 8,
+      "image": "https://i.ibb.co/w4dNwCL/papaya.jpg"
     },
     {
       "id": 13,
       "name": "Coconut",
       "price": 15.0,
-      "available": 20
+      "available": 20,
+      "image": "https://i.ibb.co/yVdkSb6/coconut.webp"
     }
   ]
 }

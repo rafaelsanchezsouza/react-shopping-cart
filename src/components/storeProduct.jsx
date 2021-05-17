@@ -22,7 +22,7 @@ export default function StoreProduct({
     <div className="itemWrapper">
       <div className="img">
         {/* <img src={`../assets/${product.name}.jpg`} alt={product.name}></img> */}
-        <img src={`${product.name}.jpg`} alt={product.name}></img>
+        <img src={product.image} alt={product.name}></img>
       </div>
       <div className="label">
         <p className="name">{product.name}</p>
