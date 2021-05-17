@@ -20,61 +20,61 @@
     },
     {
       "id": 4,
-      "name": "Banana",
+      "name": "Melon",
       "price": 10.0,
       "available": 10
     },
     {
       "id": 5,
-      "name": "Apple",
+      "name": "Grape",
       "price": 20.0,
       "available": 15
     },
     {
       "id": 6,
-      "name": "Orange",
+      "name": "Strawberry",
       "price": 30.0,
       "available": 8
     },
     {
       "id": 7,
-      "name": "Banana",
+      "name": "Cherry",
       "price": 10.0,
       "available": 10
     },
     {
       "id": 8,
-      "name": "Apple",
+      "name": "Pineapple",
       "price": 20.0,
       "available": 15
     },
     {
       "id": 9,
-      "name": "Orange",
+      "name": "Avocado",
       "price": 30.0,
       "available": 8
     },
     {
       "id": 10,
-      "name": "Banana",
+      "name": "Mango",
       "price": 10.0,
       "available": 10
     },
     {
       "id": 11,
-      "name": "Apple",
+      "name": "Lime",
       "price": 20.0,
-      "available": 15
+      "available": 1
     },
     {
       "id": 12,
-      "name": "Orange",
+      "name": "Papaya",
       "price": 30.0,
       "available": 8
     },
     {
       "id": 13,
-      "name": "Mango",
+      "name": "Coconut",
       "price": 15.0,
       "available": 20
     }

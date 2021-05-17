@@ -20,7 +20,10 @@ export default function StoreProduct({
   console.log(calculateAmount());
   return (
     <div className="itemWrapper">
-      <div className="img"></div>
+      <div className="img">
+        {/* <img src={`../assets/${product.name}.jpg`} alt={product.name}></img> */}
+        <img src={`${product.name}.jpg`} alt={product.name}></img>
+      </div>
       <div className="label">
         <p className="name">{product.name}</p>
         <p className="price">

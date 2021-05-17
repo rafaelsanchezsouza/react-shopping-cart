@@ -33,6 +33,14 @@ button {
   border-radius: 0 0 15px 15px;
 }
 
+img {
+  height: 130px;
+  width: 100%;
+  background-color: slategray;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
 .img {
   height: 130px;
   background-color: slategray;

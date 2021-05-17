@@ -8,7 +8,7 @@ import './styles/global.css';
 import StoreProduct from './components/storeProduct';
 import ShoppingCart from './components/shoppingCart';
 
-// const getProducts = require('./products.json');
+const getProducts = require('./products.json');
 
 function App() {
   const [storeProducts, setStoreProducts] = useState([]);
@@ -16,8 +16,8 @@ function App() {
 
   useEffect(() => {
     api.get('').then((response) => {
-      setStoreProducts(response.data.products);
-      // setStoreProducts(getProducts.products);
+      // setStoreProducts(response.data);
+      setStoreProducts(getProducts.products);
     });
   }, []);
 
@@ -53,7 +53,7 @@ function App() {
   return (
     <>
       <ul className="navBar">
-        <li className="storeName">Akita's Shopping Cart</li>
+        <li className="storeName">React Shopping Cart</li>
         <li className="author">by Rafael Sanchez Souza</li>
       </ul>
       <div id="store">

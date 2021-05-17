@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://shielded-wildwood-82973.herokuapp.com/products.json',
-  // baseURL: 'https://fakestoreapi.com/products',
+  // baseURL: 'https://shielded-wildwood-82973.herokuapp.com/products.json',
+  baseURL: 'https://fakestoreapi.com/products',
 });
 
 export default api;
