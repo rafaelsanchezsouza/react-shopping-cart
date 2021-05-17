@@ -1,12 +1,12 @@
-# akita-shopping-cart
+# react-shopping-cart
 
 Hello World!
 
-This is the front-end project developed as part of the hiring process from Codeminer 42.
+This is the front-end project developed for online ecommerce.
 
 It has basic functionalities required for a front-end store but there are still some issues to be worked on.
 
-### [Live Demo](http://akita-shopping-cart.herokuapp.com)
+### [Live Demo](http://ssraf-shopping-cart.herokuapp.com)
 
 ### Built With
 
@@ -27,7 +27,7 @@ npm install -g yarn
 1. Clone Repository
 
 ```
-git clone https://github.com/rafaelsanchezsouza/akita-shopping-cart.git
+git clone https://github.com/rafaelsanchezsouza/react-shopping-cart.git
 ```
 
 2. Install required packages
