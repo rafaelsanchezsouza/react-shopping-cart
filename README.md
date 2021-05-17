@@ -60,4 +60,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Linkedin - [@ssraf](https://www.linkedin.com/in/ssraf/
 
-Project Link: [https://github.com/rafaelsanchezsouza/akita-shopping-cart](https://github.com/rafaelsanchezsouza/akita-shopping-cart)
+Project Link: [https://github.com/rafaelsanchezsouza/react-shopping-cart](https://github.com/rafaelsanchezsouza/react-shopping-cart)
